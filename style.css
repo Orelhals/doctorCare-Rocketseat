@@ -1,0 +1,155 @@
+body {
+    font-family: 'DM Sans';
+    text-align: center;
+    background: #DCE9E2;
+    margin: 0 auto;
+    height: 4000px;
+}
+
+header {
+    width: 375px;
+    margin: auto auto;
+    position: relative;
+}
+
+.intro h4 {
+    color: #00856F;
+}
+
+.intro h1 {
+    color: #212529;
+    font-weight: bold;
+    width: 325px;
+    height: 132px;
+    padding-top: 16px;
+    margin: 0;
+}
+
+.intro p {
+    color: #495057;
+    font-weight: 400;
+    width: 327px;
+    height: 108px;
+    padding-top: 24px;
+    line-height: 27px;
+    font-size: 18px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00856F;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    width: 264px;
+    height: 52px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: auto auto;
+    cursor: pointer;
+}
+
+i {
+    padding-right: 8px;
+    font-size: 20px;
+}
+
+.numeros {
+    background: #FFFAF1;
+    width: 328px;
+    height: 450px;
+    padding-top: 40px;
+}
+
+.numeros h3 {
+    font-size: 48px;
+    margin:0 auto;
+    padding-top: 30px;
+}
+
+.numeros p {
+    font-size: 16px;
+    color: #00856F;
+    font-weight: 400;
+    height: 24px;
+    padding: 0;
+    margin-top: 0;
+    z-index: 1;
+}
+
+.mina {
+    object-position: 0 45px;
+    top: 485px;
+}
+
+.serv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.serv p {
+    padding-bottom: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00856F;
+}
+
+.serv h2 {
+    padding-bottom: 60px;
+    width: 314px;
+    height: 117px;
+    font-size: 30px;
+    margin: 0 auto;
+}
+
+.serviços {
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.fundo-serviços {
+    background: #F7F9F9;
+    height: 2034px;
+    width: 375px;
+    padding-top: 318px;
+}
+
+.hj {
+    background-color: white;   
+    border: 1px solid #DCE9E2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 328px;
+    height: 230px;
+    margin-left: 24px;
+    margin-bottom: 32px;
+    text-align: left;
+    padding: 30px;
+}
+
+.hj h4 {
+    font-size: 24px;
+    line-height: 31px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.hj p {
+    font-size: 16px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
