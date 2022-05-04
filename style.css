@@ -1,15 +1,39 @@
 body {
     font-family: 'DM Sans';
     text-align: center;
-    background: #DCE9E2;
     margin: 0 auto;
-    height: 4000px;
+    height: 6000px;
+}
+
+.menu-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  16px 24px;
+}
+
+nav {
+    background-color: #00856F;
+    width: 375px;
+    height: 72px;
 }
 
 header {
     width: 375px;
     margin: auto auto;
     position: relative;
+}
+
+header:before {
+    content: "";
+    width: 100vw;
+    height: 1000px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #DCE9E2;
 }
 
 .intro h4 {
@@ -96,6 +120,7 @@ i {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 375px;
 }
 
 .serv p {
@@ -121,10 +146,9 @@ i {
 }
 
 .fundo-serviços {
-    background: #F7F9F9;
     height: 2034px;
     width: 375px;
-    padding-top: 318px;
+    padding-top: 100px;
 }
 
 .hj {
@@ -152,4 +176,27 @@ i {
     font-size: 16px;
     margin: 0 auto;
     padding-bottom: 20px;
+}
+
+.sobre {
+    background: #FFFAF1;
+    height: 970px;
+    text-align: left;
+}
+
+.sobre p {
+    color: #00856F;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.sobre h4 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sobre p {
+    color: #495057;
+    font-size: 16px;
 }
