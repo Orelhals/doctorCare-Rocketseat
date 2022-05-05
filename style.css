@@ -2,26 +2,65 @@ body {
     font-family: 'DM Sans';
     text-align: center;
     margin: 0 auto;
-    height: 5500px;
 }
 
 .menu-mobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:  16px 24px;
+    padding:  19px 24px;
+    box-sizing: border-box;
 }
 
 nav {
-    background-color: #00856F;
+    background: #DCE9E2;
     width: 375px;
     height: 72px;
+    position: fixed;
+    z-index: 1;
+    transition: background 0.5s;
+}
+
+nav.active {
+    background: #00856F;
+    transition: background 0.5s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.5s;
+}
+
+nav a h2 {
+    font-weight: 400;
+}
+
+nav a h2 strong {
+    color: #00856F;
+    transition: color 0.5s;
+}
+
+nav path {
+    stroke: #00856F;
+    transition: stroke 0.5s;
+}
+
+nav.active path {
+    stroke: #DCE9E2;
+    transition: stroke 0.5s;
+}
+
+nav.active a h2 strong, nav.active a {
+    color: white;
+    transition: color 0.5s;
 }
 
 header {
     width: 375px;
     margin: auto auto;
     position: relative;
+    padding-top: 72px;
 }
 
 header:before {
@@ -38,6 +77,8 @@ header:before {
 
 .intro h4 {
     color: #00856F;
+    margin-top: 38px;
+    padding-top: 5px;
 }
 
 .intro h1 {
@@ -45,8 +86,9 @@ header:before {
     font-weight: bold;
     width: 325px;
     height: 132px;
-    padding-top: 16px;
-    margin: 0;
+    margin: -4px;
+    letter-spacing: 1px;
+    line-height: 43px;
 }
 
 .intro p {
@@ -54,9 +96,9 @@ header:before {
     font-weight: 400;
     width: 327px;
     height: 108px;
-    padding-top: 24px;
     line-height: 27px;
     font-size: 18px;
+    padding-top: 8px;
 }
 
 .intro {
@@ -74,11 +116,11 @@ button {
     border-radius: 40px;
     border: none;
     color: white;
-    width: 264px;
+    width: 263px;
     height: 52px;
     text-transform: uppercase;
     font-weight: bold;
-    margin: auto auto;
+    margin: 13px auto;
     cursor: pointer;
 }
 
@@ -91,13 +133,23 @@ i {
     background: #FFFAF1;
     width: 328px;
     height: 450px;
-    padding-top: 40px;
+    padding-top: 13px;
 }
 
 .numeros h3 {
     font-size: 48px;
-    margin:0 auto;
-    padding-top: 30px;
+}
+
+.numeros .first h3 {
+    margin: 29px 0 2px 0;
+}
+
+.numeros .second h3 {
+    margin: 61px 0 2px 0;
+}
+
+.numeros .third h3 {
+    margin: 61px 0 2px 0;
 }
 
 .numeros p {
@@ -111,7 +163,7 @@ i {
 }
 
 .mina {
-    object-position: 0 45px;
+    object-position: 0 24px;
     top: 485px;
 }
 
@@ -124,14 +176,12 @@ i {
 }
 
 .serv p {
-    padding-bottom: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #00856F;
 }
 
 .serv h2 {
-    padding-bottom: 60px;
     width: 314px;
     height: 117px;
     font-size: 30px;
@@ -146,9 +196,8 @@ i {
 }
 
 .fundo-serviços {
-    height: 1900px;
     width: 375px;
-    padding-top: 100px;
+    padding-top: 94px;
 }
 
 .hj {
@@ -157,11 +206,12 @@ i {
     box-sizing: border-box;
     border-radius: 6px;
     width: 328px;
-    height: 230px;
+    height: 207px;
     margin-left: 24px;
+    margin-top: 60px;
     margin-bottom: 32px;
     text-align: left;
-    padding: 30px;
+    padding: 22px 16px 18px 24px;
 }
 
 .hj h4 {
@@ -175,7 +225,35 @@ i {
 .hj p {
     font-size: 16px;
     margin: 0 auto;
-    padding-bottom: 20px;
+    line-height: 24px;
+}
+
+.hj.first {
+    margin-top: 60px;
+}
+
+.hj.second {
+    margin-top: 0px;
+}
+
+.hj.third {
+    margin-top: 0px;
+}
+
+.hj.fourth {
+    margin-top: 0px;
+}
+
+.hj.fiv {
+    margin-top: 0px;
+}
+
+.hj.six {
+    margin-top: 0px;
+}
+
+.sobre-nos {
+    padding-top: 72px;
 }
 
 .sobre {
@@ -203,13 +281,11 @@ i {
 .padraoP {
     color: #495057;
     font-size: 16px;
+    line-height: 24px;
 }
 
 .sobre img {
-    position: absolute;
-    top: 3960px;
-    right: 26px;
-    height: 282px;
+    padding-top: 60px ;
 }
 
 .contato {
@@ -217,7 +293,7 @@ i {
     background: white;
     height: 535px;
     text-align: left;
-    padding: 100px 24px;
+    padding: 83px 24px 116px 24px;
 }
 
 .wpp {
@@ -228,11 +304,60 @@ i {
     border-radius: 40px;
     border: none;
     color: white;
-    width: 264px;
-    height: 52px;
+    width: 267px;
+    height: 56px;
     text-transform: uppercase;
     font-weight: bold;
-    margin-left: 24px;
+    margin: 32px 0px 60px 0px;
     cursor: pointer;
 
+}
+
+.wpp i {
+    padding-right: 20px;
+}
+
+.contato div {
+    display: flex;
+}
+
+.contato div img {
+    margin-right: 8px;
+    align-self: flex-end;
+}
+
+.contato div p {
+    margin-bottom: 0px;
+}
+
+.contato h4 {
+    margin-bottom: 16px;
+}
+
+.contato img {
+    padding-left: 3px;
+}
+
+footer {
+    background-color: #00856F;
+    padding: 60px 0px 100px 23px;
+    text-align: left;
+    color: white;
+    max-height: 285px;
+    height: 100%;
+}
+
+footer h2 {
+    font-size: 44px;
+    font-weight: 400;
+    margin-top: -14px;
+    margin-bottom: -6px;
+}
+
+footer p {
+    margin-bottom: -4px;
+}
+
+footer img {
+    margin-bottom: -44px;
 }
