@@ -11,43 +11,25 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>DoctorCare</title>
 </head>
-<body>
-        <nav class="menu">
-            <a href="#">
-                <h2>Doctor<strong>Care</strong></h2>
-            </a>
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+<body class="menu-inactive">
+        <nav class="menu active">
+                <a href="#">
+                    <h2>Doctor<strong>Care</strong></h2>
+                </a>
 
-            <div class="menu-mobile">
-                <ul>
-                    <li>Início</li>
-                    <li>sobre</li>
-                    <li>Depoimentos</li>
-                </ul>
+                <button onclick="window.abrirMenu()" id="open-menu" class="open-menu">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
 
-                <a href="#">agende sua consulta</a>
-
-                <ul class="social-links">
-                    <li><img src="./imgs/instagram.svg" alt=""></li>
-                    <li><img src="./imgs/facebook.svg" alt=""></li>
-                    <li><img src="./imgs/youtube.svg" alt=""></li>
-                </ul>
-            </div>
-            
-            <button><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
-            <button><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </button>
+                <button onclick="window.abrirMenu()" id="close-menu" class="close-menu">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
         </nav>
 
         <header class="intro">
@@ -157,5 +139,21 @@
         </footer>
 
         <script src="./app.js"></script>
+
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+
+            <a class="button" href="#">agende sua consulta</a>
+
+            <ul class="social-links">
+                <li><img src="./imgs/instagram.svg" alt=""></li>
+                <li><img src="./imgs/facebook.svg" alt=""></li>
+                <li><img src="./imgs/youtube.svg" alt=""></li>
+            </ul>
+        </div>
 </body>
 </html>

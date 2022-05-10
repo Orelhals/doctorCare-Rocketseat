@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: 'DM Sans';
     text-align: center;
@@ -54,6 +59,16 @@ nav.active path {
 nav.active a h2 strong, nav.active a {
     color: white;
     transition: color 0.5s;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
 }
 
 header {
@@ -361,3 +376,63 @@ footer p {
 footer img {
     margin-bottom: -44px;
 }
+
+
+/* ====== Menu Active ======= */
+
+body.menu-active .menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00856F;
+    width: 100vw;
+    height: 100vh;
+}
+
+body.menu-inactive .close-menu {
+    display: none;
+}
+
+body.menu-active .open-menu {
+    display: none;
+}
+
+.social-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-mobile .button {
+    background: #FFFFFF;
+    border-radius: 40px;
+    color: #00856F;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 274px;
+    height: 55px;
+    margin: 48px auto 80px auto;
+    text-decoration: none;
+}
+
+.menu-mobile ul li a {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.menu-mobile {
+    padding-top: 72px;
+    transition: 0.5s;
+}
+

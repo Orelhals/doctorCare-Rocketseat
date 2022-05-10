@@ -15,3 +15,19 @@ const callBack = () => {
 
 // Eventos 
 window.addEventListener('scroll', callBack);
+
+
+//function
+
+const abrirMenu = () => {
+    const openMenu = document.querySelector('body');
+            openMenu.classList.toggle('menu-inactive');
+            openMenu.classList.toggle('menu-active');
+            return;
+}
+
+window.abrirMenu = abrirMenu;
+
+
+
+
