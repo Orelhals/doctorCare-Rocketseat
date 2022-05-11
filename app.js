@@ -1,6 +1,6 @@
 // Funções 
 const callBack = () => {
-    const nav = document.querySelector('.menu-mobile');
+    const nav = document.querySelector('.menu');
     const offSetTop = window.scrollY;
     const isActive = nav.classList.contains('active');
 
