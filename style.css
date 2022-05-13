@@ -436,3 +436,12 @@ body.menu-active .open-menu {
     transition: 0.3s;
 }
 
+.js-scroll.ativo {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.js-scroll {
+    opacity: 0;
+}
+
