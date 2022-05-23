@@ -78,6 +78,10 @@ header {
     padding-top: 72px;
 }
 
+header a {
+    text-decoration: none;
+}
+
 header:before {
     content: "";
     width: 100vw;
@@ -351,6 +355,10 @@ i {
 
 .contato img {
     padding-left: 3px;
+}
+
+.contato a {
+    text-decoration: none;
 }
 
 footer {
