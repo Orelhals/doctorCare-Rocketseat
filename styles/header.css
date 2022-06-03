@@ -1,0 +1,61 @@
+/* header */
+header {
+    width: 375px;
+    margin: auto auto;
+    position: relative;
+    padding-top: 72px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header:before {
+    content: "";
+    width: 100vw;
+    height: 1000px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #DCE9E2;
+}
+
+.intro h4 {
+    color: #00856F;
+    margin-top: 38px;
+    padding-top: 5px;
+}
+
+.intro h1 {
+    color: #212529;
+    font-weight: bold;
+    width: 325px;
+    height: 132px;
+    margin: -4px;
+    letter-spacing: 1px;
+    line-height: 43px;
+}
+
+.intro p {
+    color: #495057;
+    font-weight: 400;
+    width: 327px;
+    height: 108px;
+    line-height: 27px;
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mina {
+    object-position: 0 24px;
+    top: 485px;
+}

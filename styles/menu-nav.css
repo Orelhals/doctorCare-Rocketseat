@@ -1,0 +1,58 @@
+/* menu-nav*/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  19px 24px;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #DCE9E2;
+    width: 375px;
+    height: 72px;
+    position: fixed;
+    z-index: 1;
+    transition: background 0.5s;
+}
+
+nav.active {
+    background: #00856F;
+    transition: background 0.5s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.5s;
+}
+
+nav a h2 {
+    font-weight: 400;
+}
+
+nav a h2 strong {
+    color: #00856F;
+    transition: color 0.5s;
+}
+
+nav path {
+    stroke: #00856F;
+    transition: stroke 0.5s;
+}
+
+nav.active path {
+    stroke: #DCE9E2;
+    transition: stroke 0.5s;
+}
+
+nav.active a h2 strong, nav.active a {
+    color: white;
+    transition: color 0.5s;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}

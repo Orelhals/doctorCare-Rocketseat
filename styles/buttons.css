@@ -1,0 +1,50 @@
+/* botões */
+
+.first-wpp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00856F;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    width: 263px;
+    height: 52px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 13px auto;
+    cursor: pointer;
+}
+
+.first-wpp:hover {
+    background-color: #00453A;
+}
+
+i {
+    padding-right: 8px;
+    font-size: 20px;
+}
+
+.wpp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00856F;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    width: 267px;
+    height: 56px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 32px 0px 60px 0px;
+    cursor: pointer;
+}
+
+.wpp:hover {
+    background-color: #00453A;
+}
+
+.wpp i {
+    padding-right: 20px;
+}

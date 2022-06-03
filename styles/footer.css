@@ -1,0 +1,25 @@
+/* footer */ 
+
+footer {
+    background-color: #00856F;
+    padding: 60px 0px 100px 23px;
+    text-align: left;
+    color: white;
+    max-height: 285px;
+    height: 100%;
+}
+
+footer h2 {
+    font-size: 44px;
+    font-weight: 400;
+    margin-top: -14px;
+    margin-bottom: -6px;
+}
+
+footer p {
+    margin-bottom: -4px;
+}
+
+footer img {
+    margin-bottom: -44px;
+}

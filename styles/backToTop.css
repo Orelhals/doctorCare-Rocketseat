@@ -1,0 +1,14 @@
+/* Back to top buttom*/
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 14px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#backToTop.active {
+    opacity: 1;
+    visibility: visible;
+}
